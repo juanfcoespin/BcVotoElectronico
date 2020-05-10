@@ -1,3 +1,4 @@
+const SHA256=require('crypto-js/sha256');
 class Block{
     constructor(index, data, previewHash=''){
         this.index=index;
@@ -6,7 +7,8 @@ class Block{
         this.previewHash=previewHash;
         this.currentHash='';
     }
-    createHash(){
-        this.currentHash='';
+    getHash(){
+        return SHA256(this.index+this.data);
     }
+    
 }
