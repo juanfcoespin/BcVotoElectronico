@@ -9,6 +9,6 @@
   "author": "Juan Francisco Espín Navia",
   "license": "ISC",
   "dependencies": {
-    "crypto-js": "^4.0.0"
+    "crypto-js": "^4.2.0"
   }
 }
